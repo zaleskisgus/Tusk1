@@ -43,7 +43,7 @@
             android:id="@+id/numberField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:inputType="phone"
+            android:inputType="number"
             android:textSize="48sp"
             app:layout_constraintTop_toBottomOf="@+id/resultField"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -62,67 +62,67 @@
 
         <Button
             android:onClick="onNumberClick"
-            android:text="7" />
+            android:text="@string/key_7" />
 
         <Button
             android:onClick="onNumberClick"
-            android:text="8" />
+            android:text="@string/key_8" />
 
         <Button
             android:onClick="onNumberClick"
-            android:text="9" />
+            android:text="@string/key_9" />
 
         <Button
             android:onClick="onOperationClick"
-            android:text="/" />
+            android:text="@string/key_delit" />
 
         <Button
             android:onClick="onNumberClick"
-            android:text="4" />
+            android:text="@string/key_4" />
 
         <Button
             android:onClick="onNumberClick"
-            android:text="5" />
+            android:text="@string/key_5" />
 
         <Button
             android:onClick="onNumberClick"
-            android:text="6" />
+            android:text="@string/key_6" />
 
         <Button
             android:onClick="onOperationClick"
-            android:text="*" />
+            android:text="@string/key_umnogit" />
 
         <Button
             android:onClick="onNumberClick"
-            android:text="1" />
+            android:text="@string/key_1" />
 
         <Button
             android:onClick="onNumberClick"
-            android:text="2" />
+            android:text="@string/key_2" />
 
         <Button
             android:onClick="onNumberClick"
-            android:text="3" />
+            android:text="@string/key_3" />
 
         <Button
             android:onClick="onOperationClick"
-            android:text="-" />
+            android:text="@string/key_minus" />
 
         <Button
             android:onClick="onNumberClick"
-            android:text="0" />
+            android:text="@string/key_0" />
 
         <Button
             android:onClick="onNumberClick"
-            android:text="," />
+            android:text="@string/key_zapyata" />
 
         <Button
             android:onClick="onOperationClick"
-            android:text="+" />
+            android:text="@string/key_plus" />
 
         <Button
             android:onClick="onOperationClick"
-            android:text="=" />
+            android:text="@string/key_rovno" />
 
     </GridLayout>
 </FrameLayout>
