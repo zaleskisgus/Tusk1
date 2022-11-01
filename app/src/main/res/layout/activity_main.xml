@@ -1,57 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/person"
+            ></ImageView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="TextView"
-        android:textColor="#A50707" />
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <!-- поле результата -->
+        <TextView
+            android:id="@+id/resultField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_weight="1"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/operationField"/>
+        <!-- поле знака операции -->
+        <TextView
+            android:id="@+id/operationField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_weight="1"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/resultField"
+            />
+        <!-- поле ввода чисел -->
+        <EditText
+            android:id="@+id/numberField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="48sp"
+            app:layout_constraintTop_toBottomOf="@+id/resultField"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
-    <EditText
-        android:id="@+id/plain_text_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#601919"
-        android:backgroundTint="@color/purple_200"
-        android:backgroundTintMode="add"
-        android:shadowColor="#9A4545"
-        android:text="Button"
-        android:textColorHighlight="#B65C5C"
-        android:textColorLink="#472222"
-        app:rippleColor="#AA7272"
-        app:strokeColor="#5C2E2E" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="match_parent"
+    <GridLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Switch" />
+        android:layout_gravity="bottom|center"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:useDefaultMargins="true">
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CheckBox"
-        android:textSize="24sp" />
+        <Button
+            android:onClick="onNumberClick"
+            android:text="7" />
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:shadowColor="#A62121"
-        android:text="ToggleButton"
-        android:textColor="#FF9800" />
+        <Button
+            android:onClick="onNumberClick"
+            android:text="8" />
 
-</LinearLayout>
+        <Button
+            android:onClick="onNumberClick"
+            android:text="9" />
+
+        <Button
+            android:onClick="onOperationClick"
+            android:text="/" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="4" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="5" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="6" />
+
+        <Button
+            android:onClick="onOperationClick"
+            android:text="*" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="1" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="2" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="3" />
+
+        <Button
+            android:onClick="onOperationClick"
+            android:text="-" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="0" />
+
+        <Button
+            android:onClick="onNumberClick"
+            android:text="," />
+
+        <Button
+            android:onClick="onOperationClick"
+            android:text="+" />
+
+        <Button
+            android:onClick="onOperationClick"
+            android:text="=" />
+
+    </GridLayout>
+</FrameLayout>
