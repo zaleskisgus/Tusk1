@@ -4,26 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="center"
-            android:src="@drawable/person"
-            ></ImageView>
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scaleType="center"-->
+<!--            android:src="@drawable/person"-->
+<!--            ></ImageView>-->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="8dp">
+        android:padding="@dimen/padding">
         <!-- поле результата -->
         <TextView
             android:id="@+id/resultField"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintHorizontal_weight="1"
-            android:textSize="24sp"
+            android:textSize="@dimen/textSize"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/operationField"/>
@@ -33,7 +33,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintHorizontal_weight="1"
-            android:textSize="24sp"
+            android:textSize="@dimen/textSize"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toRightOf="@+id/resultField"
@@ -44,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:textSize="48sp"
+            android:textSize="@dimen/largeTextSize"
             app:layout_constraintTop_toBottomOf="@+id/resultField"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
@@ -60,69 +60,69 @@
         android:orientation="horizontal"
         android:useDefaultMargins="true">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
             android:text="@string/key_7" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
             android:text="@string/key_8" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
             android:text="@string/key_9" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onOperationClick"
-            android:text="@string/key_delit" />
+            android:text="@string/key_division" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
             android:text="@string/key_4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
             android:text="@string/key_5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
             android:text="@string/key_6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onOperationClick"
-            android:text="@string/key_umnogit" />
+            android:text="@string/key_multiplication" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
             android:text="@string/key_1" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
             android:text="@string/key_2" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
             android:text="@string/key_3" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onOperationClick"
             android:text="@string/key_minus" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
             android:text="@string/key_0" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onNumberClick"
-            android:text="@string/key_zapyata" />
+            android:text="@string/key_comma" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onOperationClick"
             android:text="@string/key_plus" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:onClick="onOperationClick"
-            android:text="@string/key_rovno" />
+            android:text="@string/key_exactly" />
 
     </GridLayout>
 </FrameLayout>
