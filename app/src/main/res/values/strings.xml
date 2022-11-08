@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Tusk1</string>
+    <string name="app_name">Сalculator</string>
+    <!--    кнопки на калькууляторе-->
     <string name="key_1">1</string>
     <string name="key_2">2</string>
     <string name="key_3">3</string>
@@ -10,10 +11,13 @@
     <string name="key_8">8</string>
     <string name="key_9">9</string>
     <string name="key_0">0</string>
-    <string name="key_zapyata">,</string>
+    <string name="key_comma">,</string>
     <string name="key_plus">+</string>
-    <string name="key_delit">/</string>
-    <string name="key_umnogit">*</string>
+    <string name="key_division">/</string>
+    <string name="key_multiplication">*</string>
     <string name="key_minus">-</string>
-    <string name="key_rovno">=</string>
+    <string name="key_exactly">=</string>
+    <!--    темы -->
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
 </resources>
