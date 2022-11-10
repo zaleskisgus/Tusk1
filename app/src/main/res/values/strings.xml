@@ -18,6 +18,7 @@
     <string name="key_minus">-</string>
     <string name="key_exactly">=</string>
     <!--    темы -->
+    <string name="choose_theme">Choose Theme</string>
     <string name="light_theme">Light Theme</string>
     <string name="dark_theme">Dark Theme</string>
 </resources>

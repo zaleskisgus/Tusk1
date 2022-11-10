@@ -3,4 +3,5 @@
     <dimen name="textSize">24sp</dimen>
     <dimen name="largeTextSize">48sp</dimen>
     <dimen name="padding">8dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
 </resources>
